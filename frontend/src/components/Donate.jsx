@@ -48,7 +48,7 @@ const Donate = () => {
             type="number"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            placeholder="Enter Donation Amount (USD)"
+            placeholder="Enter Donation Amount (INR)"
           />
         </div>
         <input
@@ -70,7 +70,7 @@ const Donate = () => {
           onChange={(e) => setMessage(e.target.value)}
         />
         <button type="submit" className="btn" disabled={disableBtn}>
-          Donate {amount ? `$${amount}` : "$0"}
+          Donate {amount ? `₹${amount}` : "₹0"}
         </button>
       </form>
     </section>
